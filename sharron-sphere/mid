@@ -1,0 +1,327 @@
+﻿Jonas Sharron
+Problem Solving with C, Spring 2019
+Midterm
+
+************
+question 1
+************
+
+The compiler takes computer code, written by a programmer in a specific 
+(compiled) language and converts (“compiles”) it into binary code which 
+is understood and executable by the computer.
+
+************
+question 2
+************
+
+An array is a collection of data that is all of the same type (int, float, 
+char, etc.).  In an Array, specific data is known as an element each element 
+is stored in contiguous memory locations.  Individual elements can be accessed 
+by their index, a numeric value indicating their position in the array.  Array 
+indexes start at zero and are successively numbered up to the last element, 
+n (element n will have an index of n-1, since the array indexes begin with 
+zero).  Arrays can be multi-dimensional, storing more than one set of values.  
+Strings are an example of an array made up of char variables stored in sequence.
+
+************
+question 3
+************
+
+A pointer is a variable representing a memory address.  Pointers are used to 
+reference a memory location and, thus, access the variable that is stored at 
+that location.  Although pointers can be used to access variables at their 
+respective locations in memory, the pointer, itself, does not represent the 
+variable stored in memory, it represents the address of the memory location 
+for the variable.
+
+************
+question 4
+************
+
+A string is an array of characters ending with  a NULL terminator (\0).  Each 
+successive element in the array is a character of the string with the NULL 
+terminator marking the end.  If, for instance, a string was to be used to 
+represent the word dog, index[0] in the array would be ‘d’, index[1] ‘o’, 
+index[2] ‘g’, and index[3] ‘\0’ (the NULL terminator, signifying the end of 
+the array).
+
+************
+question 5
+************
+
+Sorting is the process of rearranging data (often elements in an array) into 
+a meaningful (typically ascending) order.  There are various methods for 
+performing a sort, but they all involve comparing values of data (or elements 
+in an array) and swapping the order of them to achieve  a chronological order.
+
+************
+question 6
+************
+
+PRE-TEST
+while (x < 5)
+{
+    //do something
+    x++;
+}
+
+POST-TEST
+do
+{ 
+    //do something
+    x++;
+} while (x < 5)
+
+************
+question 7
+************
+
+When the function strcmp is called, two strings are included as arguments 
+(strcmp(string1, string2)).  The function then compares each successive element 
+of each string (array) to one another.  The function continues comparing elements 
+until either they no longer match, of the null terminator is reached in both 
+strings.  The strcmp function  returns a value of  < 0 if string1 is less than 
+string2, >0 if string2 is less than string1, or 0 if the strings are equal. 
+
+************
+question 8
+************
+
+union SWAP {
+	long int i;
+	char ch;
+};
+typedef union SWAP Swap;
+
+struct TIME {
+	int h, m, s;
+};
+typedef struct TIME Time;
+
+struct DATE {
+	int d, m, y;
+	Time t;
+};
+typedef struct DATE Date;
+
+int main()
+{
+	float x, y;
+	FILE * fp;
+	char *str;
+	int data[100];
+	Swap s;
+	Date dates[100];
+	s.i = 0; s.ch = 's';
+
+	fp = fopen("list.dat", "w");
+	fprintf(fp, "%d %f %d %d\n", dates[100].t.s, x, data[1], dates->t);
+}
+
+************
+question 9
+************
+
+int main()
+{
+	char s[10] = "H";
+	char s1[10] = "i";
+
+	strcpy(s1, s);
+}
+
+************
+question 10
+************
+
+int main()
+{
+	char s1[100], s2[100];
+	int s3;
+
+	strcpy(s1, "this is a string");
+	strcpy(s2, "and another string");
+	s3 = strcmp(s1, s2);
+}
+
+************
+question 11
+************
+
+	int data1[40], data2[40];
+	int* p1;
+	int* p2;
+	
+	p1 = &data2;
+	p2 = &data1;
+	
+************
+question 12
+************	
+
+i =  12
+i =   2
+
+************
+question 13
+************
+
+i = 4
+i =   4
+
+************
+question 14
+************
+
+you answered 12
+
+************
+question 15
+************
+
+2 pi =    2.0
+2 pi =    2.0
+
+************
+question 16
+************
+
+	FILE *inputFile;
+	inputFile = fopen(fileName, "r");
+
+	for (int i = 0; i < N; i++)
+	{
+		fscanf(inputFile, "%f", data[i]);
+	}
+	
+************
+question 17
+************
+
+struct CODES {
+	int ascii;
+	char letter;
+};
+typedef struct CODES Code;
+
+Code english[26];
+
+************
+question 18
+************
+
+	do
+	{
+		printf("Please enter an integer: ");
+		scanf("%d", &input);
+	} while ((input != 0) && (input != 99));
+	
+************
+question 19
+************
+
+	scanf("%d %d %d", &d->a, &d->b, &d->c);
+	
+************
+question 20
+************
+
+#include <stdio.h> 
+#include <stdlib.h> 
+
+int main(int argc, char *argv[])
+{
+    float a = atof(argv[1]);
+    float b = atof(argv[2]);
+
+    printf("The sum of the floats is: %f", (a + b));
+
+    return (0);
+
+}
+
+************
+question 21
+************
+
+int average(float a, float b)
+{
+	int average = ((a + b) / 2);
+	return average;
+}  //  end average
+
+************
+question 22
+************
+
+int count(char* string)
+{
+	int count = 0;
+	int length = strlen(string);
+
+	for (int i = 0; i < length; i++)
+	{
+		if (isdigit(string[i]))
+		{
+			count++;
+		}
+	}
+	return(count);
+}  //  end count
+
+************
+question 23
+************
+
+Person getData()
+{
+	Person p;
+
+	printf("Please enter a name: ");
+	scanf("%s", &p.name);
+	printf("Please enter an age: ");
+	scanf("%d", &p.age);
+	printf("Please enter a wage: ");
+	scanf("%f", &p.wage);
+
+	return (p);
+
+}  //  end getData
+
+************
+question 24
+************
+
+int main(int argc, char *argv[])
+{
+	void Read(char*, int*, int);  // filename, arrayname, count
+	void Sort(int*, int);         // arrayname,count
+	int Search(int*, int, int);   // arrayname,count,key
+
+	int key = atoi(argv[3]);
+	int searchResult;
+	int count = atoi(argv[2]);
+	int *data;
+
+	data = (int *)malloc(sizeof(int)*count);
+
+	Read(argv[1], data, count);
+	Sort(data, count);
+	searchResult = Search(data, count, key);
+
+	if (searchResult == 1)
+	{
+		printf("The key was found in the array.");
+	}
+	else if (searchResult == 0)
+	{
+		printf("The key was not found in the array.");
+	}
+
+	return(0);
+}  //  end main
+
+
+
+
+	
