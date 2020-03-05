@@ -28,6 +28,9 @@
     <Compile Include="sharron_lines.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="sharron_lookup.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="sharron_phones.py">
       <SubType>Code</SubType>
     </Compile>
