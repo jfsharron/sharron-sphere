@@ -15,8 +15,8 @@
 def file():
     """
     ===========================================================================
-    Function:       open()
-    Purpose:        promt user for filename, open file, read file contents into
+    Function:       file()
+    Purpose:        prompt user for filename, open file, read file contents into
                     a list 
     Parameter(s):   none
     Return:         nothing; data is written to fileList[]
