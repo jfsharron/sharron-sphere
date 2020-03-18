@@ -25,6 +25,9 @@
     <Compile Include="mod1.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="sharron_customers.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="sharron_lines.py">
       <SubType>Code</SubType>
     </Compile>
@@ -35,6 +38,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="sharron_sphere.py" />
+    <Compile Include="student.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test_student.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
