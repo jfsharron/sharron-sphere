@@ -41,6 +41,7 @@
     <Compile Include="student.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="test_customer.py" />
     <Compile Include="test_student.py">
       <SubType>Code</SubType>
     </Compile>
