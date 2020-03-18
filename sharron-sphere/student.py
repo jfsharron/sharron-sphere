@@ -25,13 +25,13 @@ class Student(object):
 
     def setScore(self, i, score):
         """
-        Resets the ith score, counting from 1.
+        Resets the with score, counting from 1.
         """
         self.scores[i-1] = score
 
     def getScore(self, i):
         """
-        Returns the ith score, counting from 1.
+        Returns the with score, counting from 1.
         """
         return self.scores[i-1]
 
