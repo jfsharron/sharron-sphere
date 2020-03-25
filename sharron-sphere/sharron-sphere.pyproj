@@ -25,6 +25,13 @@
     <Compile Include="mod1.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="person.py" />
+    <Compile Include="rational.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sharron_company.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="sharron_customers.py">
       <SubType>Code</SubType>
     </Compile>
@@ -41,7 +48,11 @@
     <Compile Include="student.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="test_company.py" />
     <Compile Include="test_customer.py" />
+    <Compile Include="test_rational.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="test_student.py">
       <SubType>Code</SubType>
     </Compile>
